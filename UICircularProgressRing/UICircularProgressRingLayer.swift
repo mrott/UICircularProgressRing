@@ -140,6 +140,9 @@ class UICircularProgressRingLayer: CAShapeLayer {
         if key == "value" {
             return true
         }
+        if key == "startAngle" {
+            return true
+        }
         
         return super.needsDisplay(forKey: key)
     }
